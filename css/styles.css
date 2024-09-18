@@ -1,0 +1,525 @@
+@font-face {
+  font-family: "Fixel Display";
+  src: url("/polytex/fonts/FixelDisplay-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fixel Display";
+  src: url("/polytex/fonts/FixelDisplay-Bold.woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+h5 {
+  margin: 0;
+}
+h6 {
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* main styles*/
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+/* Site header */
+.header-row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.menu-item {
+  display: block;
+  color: #83837a;
+  font-family: "Fixel Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.site-menu {
+  margin-left: 100px;
+}
+.header-contacts {
+  margin-left: auto;
+}
+.logo {
+  padding: 28px 0;
+}
+.header-telephone {
+  color: #444;
+  font-family: "Fixel Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+/* Hero section */
+.hero-container {
+  padding: 100px 0 40px 0;
+}
+.hero-section {
+  background-image: url(/polytex/img/main.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-position: center;
+}
+.site-title {
+  display: block;
+  color: #fff;
+  font-family: "Fixel Display";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 110%; /* 52.8px */
+  max-width: 677px;
+}
+.site-title-span {
+  color: #fff;
+  font-family: "Fixel Display";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 110%; /* 30.8px */
+  border-radius: 16px;
+  border: 1.5px solid #fff;
+  padding: 4px 8px;
+  margin-left: 8px;
+}
+.main-button {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-family: "Fixel Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 100%;
+  border-radius: 12px;
+  background: #5bb139;
+  padding: 16px 24px;
+  margin-top: 40px;
+  width: 200px;
+}
+.hero-slider-nav-row {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  margin-top: 95px;
+}
+.main-button-text {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+/* products cection */
+.section-pre-title {
+  display: block;
+  margin: 0px 0px 0px 10px;
+  padding: 0;
+  color: #83837a;
+  font-family: "Fixel Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.pre-title-icon {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.products-container {
+  padding: 60px 0px;
+}
+.pre-title-row {
+  display: flex;
+  flex-direction: row;
+}
+.products-title-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.products-title {
+  color: #1d1d1b;
+  font-family: "Fixel Display";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 54.6px */
+  max-width: 570px;
+}
+.products-title-span {
+  color: #83837a;
+  font-family: "Fixel Display";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.products-title-description {
+  display: block;
+  margin-left: auto;
+  max-width: 390px;
+  color: #444;
+  font-family: "Fixel Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 27px */
+}
+.procucts-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 24px;
+}
+.procucts-list-item-title {
+  display: block;
+  margin: 0px 0px 0px 10px;
+  color: #1d1d1b;
+  font-family: "Fixel Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+  text-transform: uppercase;
+}
+.procucts-list-item-title-row {
+  display: flex;
+  flex-direction: row;
+}
+.procucts-list-img {
+  margin-top: 24px;
+  max-width: 280px;
+}
+.products-decoration-list {
+  display: flex;
+  flex-direction: row;
+  height: 11px;
+}
+.products-decoration-item {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-top: 1px solid #b6b6b6;
+  border-left: 1px solid #b6b6b6;
+  border-right: 1px solid #b6b6b6;
+}
+.products-nav-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  justify-content: center;
+}
+.hero-slider-nav-row svg {
+  fill: white;
+}
+
+.products-nav-row svg {
+  fill: #5bb139;
+}
+/* about us */
+.about-us {
+  background: #eff1f4;
+}
+.about-us-container {
+  padding: 60px 0;
+}
+.about-us-title-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+}
+.about-us-title-container {
+  max-width: 680px;
+}
+.about-us-title {
+  color: #1d1d1b;
+  font-family: "Fixel Display";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 54.6px */
+}
+.about-us-description {
+  color: #1d1d1b;
+  font-family: "Fixel Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  margin-top: 32px;
+}
+.about-us-title-description {
+  color: #444;
+  font-family: "Fixel Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 27px */
+  max-width: 380px;
+  margin-left: auto;
+}
+.button {
+  display: block;
+  text-decoration: none;
+  margin-top: 24px;
+}
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 200px;
+  height: 56px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background: #5bb139;
+}
+.button-arrow,
+.button-text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Fixel Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 18px */
+}
+/* Advertize */
+.advertize {
+  background: #5bb139;
+}
+.advertize-row {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 0;
+}
+.advertize-text {
+  display: block;
+  color: #fff;
+  font-family: "Fixel Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+/* Projects */
+.projects-container {
+  padding: 60px 0;
+}
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  gap: 20px;
+}
+.projects-list-item {
+  position: relative;
+}
+.project-card-title {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-family: "Fixel Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+  padding: 8px 16px;
+  border-radius: 0px 0px 12px 0px;
+  background: #444;
+}
+.key-numbers-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+.key-numbers-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.key-number-text {
+  color: #83837a;
+  font-family: "Fixel Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%; /* 21.6px */
+  max-width: 150px;
+  margin-left: 16px;
+}
+.key-numbers-sep {
+  content: "";
+  width: 55px;
+  height: 2px;
+  background: #5bb139;
+  transform: rotate(-75deg);
+  margin-right: 24px;
+}
+.key-number {
+  color: #5bb139;
+  font-family: "Fixel Display";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 130%; /* 54.6px */
+}
+/* services */
+.services {
+  background: #eff1f4;
+}
+.services-container {
+  padding: 60px 0;
+}
+.services-title {
+  color: #1d1d1b;
+  font-family: "Fixel Display";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 54.6px */
+  max-width: 680px;
+}
+.services-title-span {
+  color: #83837a;
+  font-family: "Fixel Display";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.services-dec {
+  margin-top: 60px;
+}
+.products-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.products-list-item {
+  max-width: 380px;
+  display: block;
+}
+.products-list-item-title {
+  display: block;
+  color: #1d1d1b;
+  font-family: "Fixel Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 130%; /* 23.4px */
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+.products-list-item-text {
+  display: block;
+  color: #444;
+  font-family: "Fixel Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 150%; /* 27px */
+  margin-top: 19px;
+}
+.products-list-item-img {
+  margin-top: 24px;
+}
+/* Site footer */
+.site-footer {
+  border-top: 1px solid #5baa31;
+}
+.footer-container {
+  padding: 60px 0px 81px 0px;
+}
+.footer-row {
+  display: flex;
+  flex-direction: row;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-left: auto;
+}
+.footer-nav-link {
+  display: block;
+  text-decoration: none;
+}
+.footer-nav-item {
+  display: block;
+  color: #83837a;
+  font-family: "Fixel Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.footer-col {
+  max-width: 180px;
+}
+.footer-adreess {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer-phone,
+.footer-adress {
+  display: block;
+  color: #444;
+  font-family: "Fixel Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
