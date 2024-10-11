@@ -145,7 +145,6 @@
 }
 
 .parameters-table-head {
-  padding: 8px 0;
   background-color: #5bb139;
   border: none;
 }
@@ -155,6 +154,7 @@
 }
 
 .parameters-table-header {
+  padding: 8px 0;
   background-color: #5bb139;
   font-weight: 600;
   font-size: 18px;
@@ -163,8 +163,14 @@
   border: none;
 }
 
+.parameters-table-row {
+  border-bottom: 1px solid #5bb139;
+}
+
 .parameters-table-data {
   padding-left: 20px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .parameters-table-data.image {
