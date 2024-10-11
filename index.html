@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/polytex/css/styles.css" />
-    <script
+    <title>Polytex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
-    />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -22,524 +27,635 @@
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-
-    <title>Polytex</title>
+    ></script> -->
   </head>
   <body>
-    <header class="main-header">
-      <div class="container header-row">
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
         <div class="logo">
-          <a class="header-logo-link" href="">
-            <svg class="header-logo" width="180" height="24">
-              <use href="/polytex/img/icons.svg#header-logo"></use>
+          <a
+            class="logo-link"
+            href="./index.html"
+            aria-label="polytex logo, main page"
+          >
+            <svg class="logo-icon" width="180" height="24">
+              <use href="./img/icons.svg#icon-full-logo"></use>
             </svg>
           </a>
         </div>
         <nav class="site-menu">
-          <ul class="menu-list">
-            <li>
-              <a href="" class="menu-item">Про нас</a>
+          <ul class="site-menu-list">
+            <li class="site-menu-list-items"><a href="">Про нас</a></li>
+            <li class="site-menu-list-items">
+              <a href="./products.html">Продукція</a>
             </li>
-            <li>
-              <a href="" class="menu-item">Продукція</a>
+            <li class="site-menu-list-items"><a href="">Запчастини</a></li>
+            <li class="site-menu-list-items">
+              <a href="">Ремонт і cервіс</a>
             </li>
-            <li>
-              <a href="" class="menu-item">Запчастини</a>
-            </li>
-            <li>
-              <a href="" class="menu-item">Ремонт і сервіс</a>
-            </li>
-            <li>
-              <a href="" class="menu-item">Контакти</a>
+            <li class="site-menu-list-items">
+              <a href="./contacts.html">Контакти</a>
             </li>
           </ul>
         </nav>
         <address class="header-contacts">
-          <a class="header-telephone" href="">+38 044 333 68 69</a>
+          <a class="header-contacts-phone" href="tel:+380443336869"
+            >+38 044 333 68 69</a
+          >
         </address>
-        <div class="mobile-menu-button">
-          <span class="menu-icon"></span>
-          <span class="menu-icon"></span>
-          <span class="menu-icon"></span>
-        </div>
-      </div>
-      <div class="mobile-menu">
-        <div class="container">
-          <nav class="mobile-menu-nav">
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+          <nav class="mobile-menu">
             <ul class="mobile-menu-list">
-              <a class="mobile-menu-link" href=""
-                ><li class="mobile-menu-item">Про нас</li></a
-              >
-              <a class="mobile-menu-link" href=""
-                ><li class="mobile-menu-item">Продукція</li></a
-              >
-              <a class="mobile-menu-link" href=""
-                ><li class="mobile-menu-item">Запчастини</li></a
-              >
-              <a class="mobile-menu-link" href=""
-                ><li class="mobile-menu-item">Ремонт і сервіс</li></a
-              >
-              <a class="mobile-menu-link" href=""
-                ><li class="mobile-menu-item">Контакти</li></a
-              >
-              <a class="mobile-menu-adress-link" href=""
-                ><li class="mobile-menu-item">+38 044 333 68 69</li></a
-              >
+              <li class="mobile-menu-list-items">Про нас</li>
+              <li class="mobile-menu-list-items">Продукція</li>
+              <li class="mobile-menu-list-items">Запчастини</li>
+              <li class="mobile-menu-list-items">Ремонт і cервіс</li>
+              <li class="mobile-menu-list-items">Контакти</li>
             </ul>
           </nav>
+          <address class="header-mobile-contacts">
+            <a class="header-mobile-contacts-phone" href="tel:+380443336869"
+              >+38 044 333 68 69</a
+            >
+          </address>
         </div>
       </div>
     </header>
-    <section class="hero-section">
-      <div class="container hero-container">
-        <div class="site-title-span-wrap">
-          <span class="site-title-span-mobile">B2B</span
-          ><span class="site-title-span-mobile">B2G</span>
-        </div>
-        <h1 class="site-title">
-          Продаж<span class="site-title-span">B2B</span
-          ><span class="site-title-span">B2G</span><br />
-          та обслуговування підйомної техніки
-        </h1>
-        <a href="" class="main-button">
-          <p class="main-button-text">Отримати консультацію</p>
-          <p class="main-button-arrow">
-            <svg class="nav-arrow-left" width="14" height="36">
-              <use href="/polytex/img/icons.svg#main-button-arrow"></use>
-            </svg>
-          </p>
-        </a>
-        <div class="hero-slider-nav-row">
-          <span>
-            ><svg class="nav-arrow-left hero-prev" width="18" height="18">
-              <use href="/polytex/img/icons.svg#nav-arrow-left"></use>
-            </svg>
-          </span>
-          <span>
-            ><svg class="nav-arrow-left hero-next" width="18" height="18">
-              <use href="/polytex/img/icons.svg#nav-arrow-right"></use>
-            </svg>
-          </span>
-        </div>
-      </div>
-    </section>
-    <section class="products">
-      <div class="container products-container">
-        <div class="pre-title-row">
-          <p class="pre-title-icon">
-            <svg width="38" height="18">
-              <use href="/polytex/img/icons.svg#pre-title-icon"></use>
-            </svg>
-          </p>
-          <p class="section-pre-title">Наша техніка</p>
-        </div>
-        <div class="products-title-row">
-          <h2 class="products-title">
-            Пропонуємо автокрани та самохідні підйомники найвищої якості –
-            <span class="products-title-span">нові або з пробігом</span>
-          </h2>
-          <p class="products-title-description">
-            Гарантуємо найкращу пропозицію на техніку, повне сервісне
-            обслуговування, та професійний ремонт
-          </p>
-        </div>
-        <div class="procucts-list-raw">
-          <div class="products-decoration-raw">
-            <ul class="products-decoration-list">
-              <li class="products-decoration-item"></li>
-              <li class="products-decoration-item"></li>
-              <li class="products-decoration-item"></li>
-              <li class="products-decoration-item"></li>
-            </ul>
-          </div>
-          <ul class="procucts-list">
-            <li class="procucts-list-item">
-              <div class="procucts-list-item-title-row">
-                <p class="pre-title-icon">
-                  <svg width="38" height="18">
-                    <use href="/polytex/img/icons.svg#pre-title-icon"></use>
-                  </svg>
-                </p>
-                <h3 class="procucts-list-item-title">Автокрани</h3>
-              </div>
-              <div class="procucts-list-img">
-                <img
-                  srcset="/polytex/img/cranes-img.png"
-                  src="/polytex/img/cranes-img.png"
-                  alt="Автокрани"
-                  width="280"
-                />
-              </div>
-            </li>
-            <li class="procucts-list-item">
-              <div class="procucts-list-item-title-row">
-                <p class="pre-title-icon">
-                  <svg width="38" height="18">
-                    <use href="/polytex/img/icons.svg#pre-title-icon"></use>
-                  </svg>
-                </p>
-                <h3 class="procucts-list-item-title">Автовишки</h3>
-              </div>
-              <div class="procucts-list-img">
-                <img
-                  srcset="/polytex/img/lifts-img.png"
-                  src="/polytex/img/lifts-img.png"
-                  alt="Автокрани"
-                  width="280"
-                />
-              </div>
-            </li>
-            <li class="procucts-list-item">
-              <div class="procucts-list-item-title-row">
-                <p class="pre-title-icon">
-                  <svg width="38" height="18">
-                    <use href="/polytex/img/icons.svg#pre-title-icon"></use>
-                  </svg>
-                </p>
-                <h3 class="procucts-list-item-title">Підйомники</h3>
-              </div>
-              <div class="procucts-list-img">
-                <img
-                  srcset="/polytex/img/awp-img.png"
-                  src="/polytex/img/awp-img.png"
-                  alt="Автокрани"
-                  width="280"
-                />
-              </div>
-            </li>
-            <li class="procucts-list-item">
-              <div class="procucts-list-item-title-row">
-                <p class="pre-title-icon">
-                  <svg width="38" height="18">
-                    <use href="/polytex/img/icons.svg#pre-title-icon"></use>
-                  </svg>
-                </p>
-                <h3 class="procucts-list-item-title">Для рятувальників</h3>
-              </div>
-              <div class="procucts-list-img">
-                <img
-                  srcset="/polytex/img/fire-img.png"
-                  src="/polytex/img/fire-img.png"
-                  alt="Автокрани"
-                  width="280"
-                />
-              </div>
-            </li>
-            <li class="procucts-list-item">
-              <div class="procucts-list-item-title-row">
-                <p class="pre-title-icon">
-                  <svg width="38" height="18">
-                    <use href="/polytex/img/icons.svg#pre-title-icon"></use>
-                  </svg>
-                </p>
-                <h3 class="procucts-list-item-title">Для рятувальників</h3>
-              </div>
-              <div class="procucts-list-img">
-                <img
-                  srcset="/polytex/img/fire-img.png"
-                  src="/polytex/img/fire-img.png"
-                  alt="Автокрани"
-                  width="280"
-                />
-              </div>
-            </li>
-          </ul>
-          <div class="products-nav-row">
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="hero-main">
+        <div class="container hero-main-container">
+          <h1 class="hero-main-title">
+            Продаж
+            <br />та обслуговування підйомної техніки
+            <span class="wrapper">
+              <p class="hero-span">B2B</p>
+              <p class="hero-span">B2G</p>
+            </span>
+          </h1>
+          <a href="" class="main-button">
+            <p class="main-button-text">Отримати консультацію</p>
+            <p class="main-button-arrow">
+              <svg class="nav-arrow-left" width="14" height="36">
+                <use href="/polytex/img/icons.svg#main-button-arrow"></use>
+              </svg>
+            </p>
+          </a>
+
+          <!-- need review
+           
+          <div class="hero-slider-nav-row">
             <span>
-              <svg class="nav-arrow-left prev" width="18" height="18">
+              ><svg class="nav-arrow-left hero-prev" width="18" height="18">
                 <use href="/polytex/img/icons.svg#nav-arrow-left"></use>
               </svg>
             </span>
             <span>
-              <svg class="nav-arrow-left next" width="18" height="18">
+              ><svg class="nav-arrow-left hero-next" width="18" height="18">
                 <use href="/polytex/img/icons.svg#nav-arrow-right"></use>
               </svg>
             </span>
-          </div>
+          </div> -->
         </div>
-      </div>
-    </section>
-    <section class="about-us">
-      <div class="container about-us-container">
-        <div class="pre-title-row">
-          <p class="pre-title-icon">
-            <svg width="38" height="18">
-              <use href="/polytex/img/icons.svg#pre-title-icon"></use>
+
+        <!-- Equipment -->
+      </section>
+      <section class="products">
+        <div class="container products-container">
+          <h1 class="visually-hidden">Наша техніка</h1>
+          <div class="title-icon-wrapper">
+            <svg class="icon" width="38" height="18">
+              <use href="./img/icons.svg#icon-pre-title-icon"></use>
             </svg>
-          </p>
-          <p class="section-pre-title">Про нас</p>
-        </div>
-        <div class="about-us-title-row">
-          <div class="about-us-title-container">
-            <h2 class="about-us-title">
-              Політек Імпекс – Ваш надійний партнер у світі автокранів та
-              підйомників в Україні
-            </h2>
-            <p class="about-us-description">
-              Наші спеціалісти мають насправді унікальний досвід продажу,
-              сервісу, ремонту і обслуговуванню різноманітних колісних кранів і
-              підйомників
+            <h2 class="contacts-title">наша техніка</h2>
+          </div>
+
+          <div class="products-title-row">
+            <p class="products-title">
+              Пропонуємо автокрани та самохідні підйомники найвищої якості –
+              <span class="products-title-span">нові або з пробігом</span>
             </p>
-            <a href="" class="button">
-              <div class="button-row">
-                <p class="button-text">Детальніше</p>
-                <p class="button-arrow">
-                  <svg class="nav-arrow-left" width="14" height="16">
-                    <use href="/polytex/img/icons.svg#button-arrow"></use>
+            <p class="products-title-description">
+              Гарантуємо найкращу пропозицію на техніку, повне сервісне
+              обслуговування, та професійний ремонт
+            </p>
+          </div>
+          <div class="procucts-list-raw">
+            <!-- need review-->
+            <div class="products-decoration-raw">
+              <ul class="products-decoration-list">
+                <li class="products-decoration-item"></li>
+                <li class="products-decoration-item"></li>
+                <li class="products-decoration-item"></li>
+                <li class="products-decoration-item"></li>
+              </ul>
+            </div>
+            <ul class="procucts-list">
+              <li class="procucts-list-item">
+                <div class="title-icon-wrapper">
+                  <svg class="icon" width="38" height="19">
+                    <use href="./img/icons.svg#icon-pre-title-icon"></use>
                   </svg>
-                </p>
-              </div>
-            </a>
-          </div>
-          <p class="about-us-title-description">
-            Обирайте Політек Імпекс – і ваш бізнес отримає найкращу технічну
-            підтримку для досягнення нових висот!
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="advertize">
-      <div class="container container-advertize">
-        <div class="advertize-row">
-          <div class="brand-icon">
-            <svg class="nav-arrow-left" width="31" height="22">
-              <use href="/polytex/img/icons.svg#brand-icon"></use>
-            </svg>
-          </div>
-          <p class="advertize-text">POLYTEX - піднімаємо на новий рівень</p>
-        </div>
-      </div>
-    </section>
-    <section class="projects">
-      <div class="container projects-container">
-        <div class="pre-title-row">
-          <p class="pre-title-icon">
-            <svg width="38" height="18">
-              <use href="/polytex/img/icons.svg#pre-title-icon"></use>
-            </svg>
-          </p>
-          <p class="section-pre-title">Реалізовані проєкти</p>
-        </div>
-        <div class="products-title-row">
-          <h2 class="products-title">
-            Реалізовуємо проекти для передових компанії України
-          </h2>
-          <p class="products-title-description">
-            Ми успішно співпрацюємо з проектамив промисловому секторі, аграрній
-            сфері та для ДСНС.
-          </p>
-        </div>
-        <ul class="projects-list">
-          <a class="projects-card-link" href=""
-            ><li class="projects-list-item">
-              <img
-                srcset="/polytex/img/project-1.png"
-                src="/polytex/img/project-1.png"
-                alt="Автокрани"
-                width="280"
-              />
-              <p class="project-card-title">Агропромисловість</p>
-            </li>
-          </a>
-          <a class="projects-card-link" href=""
-            ><li class="projects-list-item">
-              <img
-                srcset="/polytex/img/project-2.png"
-                src="/polytex/img/project-1.png"
-                alt="Автокрани"
-                width="280"
-              />
-              <p class="project-card-title">Гірничо–видобування</p>
-            </li>
-          </a>
-          <a class="projects-card-link" href=""
-            ><li class="projects-list-item">
-              <img
-                srcset="/polytex/img/project-3.png"
-                src="/polytex/img/project-1.png"
-                alt="Автокрани"
-                width="280"
-              />
-              <p class="project-card-title">Будівництво</p>
-            </li>
-          </a>
-          <a class="projects-card-link" href=""
-            ><li class="projects-list-item">
-              <img
-                srcset="/polytex/img/project-4.png"
-                src="/polytex/img/project-1.png"
-                alt="Автокрани"
-                width="280"
-              />
-              <p class="project-card-title">Рятувальна служба</p>
-            </li>
-          </a>
-        </ul>
-        <ul class="key-numbers-list">
-          <li class="key-numbers-item">
-            <p class="key-number">200+</p>
-            <p class="key-number-text">завершених проектів</p>
-            <span class="key-numbers-sep"></span>
-          </li>
-          <li class="key-numbers-item">
-            <p class="key-number">15+</p>
-            <p class="key-number-text">років досвіду у супроводі</p>
-            <span class="key-numbers-sep"></span>
-          </li>
-          <li class="key-numbers-item">
-            <p class="key-number">40+</p>
-            <p class="key-number-text">постійних клієнтів</p>
-            <span class="key-numbers-sep"></span>
-          </li>
-          <li class="key-numbers-item">
-            <p class="key-number">20+</p>
-            <p class="key-number-text">світових брендів</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="services">
-      <div class="container services-container">
-        <div class="pre-title-row">
-          <p class="pre-title-icon">
-            <svg width="38" height="18">
-              <use href="/polytex/img/icons.svg#pre-title-icon"></use>
-            </svg>
-          </p>
-          <p class="section-pre-title">Наші послуги</p>
-        </div>
-        <h2 class="services-title">
-          Наші основні компетенції – це
-          <span class="services-title-span"
-            >забезпечення ефективності будівництва</span
-          >
-        </h2>
-        <div class="products-decoration-raw">
-          <div class="services-dec">
-            <ul class="products-decoration-list">
-              <li class="products-decoration-item"></li>
-              <li class="products-decoration-item"></li>
-              <li class="products-decoration-item"></li>
+                  <h3 class="procucts-list-item-title">Автокрани</h3>
+                </div>
+                <!-- <div class="procucts-list-item-title-row">
+                  <p class="pre-title-icon">
+                    <svg width="38" height="18">
+                      <use href="/polytex/img/icons.svg#pre-title-icon"></use>
+                    </svg>
+                  </p>
+                  <h3 class="procucts-list-item-title">Автокрани</h3>
+                </div> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./img/main-page/product/product1.jpg    1x,
+                      ./img/main-page/product/product1-2x.jpg 2x
+                    "
+                    media="(min-width: 946px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/product/product1.jpg    1x,
+                      ./img/main-page/product/product1-2x.jpg 2x
+                    "
+                    media="(max-width: 945px)"
+                  />
+                  <!--виправити з зобраненнями для моб.версії-->
+                  <img
+                    src="./img/main-page/product/product1.jpg"
+                    alt="Автокран"
+                    width="280"
+                  />
+                </picture>
+                <!-- <div class="procucts-list-img">
+                  <img
+                    srcset="/polytex/img/cranes-img.png"
+                    src="/polytex/img/cranes-img.png"
+                    alt="Автокрани"
+                    width="280"
+                  />
+                </div> -->
+              </li>
+              <li class="procucts-list-item">
+                <div class="title-icon-wrapper">
+                  <svg class="icon" width="38" height="19">
+                    <use href="./img/icons.svg#icon-pre-title-icon"></use>
+                  </svg>
+                  <h3 class="procucts-list-item-title">Автовишки</h3>
+                </div>
+                <!-- <div class="procucts-list-item-title-row">
+                  <p class="pre-title-icon">
+                    <svg width="38" height="18">
+                      <use href="/polytex/img/icons.svg#pre-title-icon"></use>
+                    </svg>
+                  </p>
+                  <h3 class="procucts-list-item-title">Автовишки</h3>
+                </div> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./img/main-page/product/product2.jpg    1x,
+                      ./img/main-page/product/product2-2x.jpg 2x
+                    "
+                    media="(min-width: 946px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/product/product2.jpg    1x,
+                      ./img/main-page/product/product2-2x.jpg 2x
+                    "
+                    media="(max-width: 945px)"
+                  />
+                  <!--виправити з зобраненнями для моб.версії-->
+                  <img
+                    src="./img/main-page/product/product2.jpg"
+                    alt="Автокран"
+                    width="280"
+                  />
+                </picture>
+                <!-- <div class="procucts-list-img">
+                  <img
+                    srcset="/polytex/img/lifts-img.png"
+                    src="/polytex/img/lifts-img.png"
+                    alt="Автокрани"
+                    width="280"
+                  />
+                </div> -->
+              </li>
+              <li class="procucts-list-item">
+                <div class="title-icon-wrapper">
+                  <svg class="icon" width="38" height="19">
+                    <use href="./img/icons.svg#icon-pre-title-icon"></use>
+                  </svg>
+                  <h3 class="procucts-list-item-title">Підйомники</h3>
+                </div>
+                <!-- <div class="procucts-list-item-title-row">
+                  <p class="pre-title-icon">
+                    <svg width="38" height="18">
+                      <use href="/polytex/img/icons.svg#pre-title-icon"></use>
+                    </svg>
+                  </p>
+                  <h3 class="procucts-list-item-title">Підйомники</h3>
+                </div> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./img/main-page/product/product3.jpg    1x,
+                      ./img/main-page/product/product3-2x.jpg 2x
+                    "
+                    media="(min-width: 946px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/product/product3.jpg    1x,
+                      ./img/main-page/product/product3-2x.jpg 2x
+                    "
+                    media="(max-width: 945px)"
+                  />
+                  <!--виправити з зобраненнями для моб.версії-->
+                  <img
+                    src="./img/main-page/product/product3.jpg"
+                    alt="Автокран"
+                    width="280"
+                  />
+                </picture>
+                <!-- <div class="procucts-list-img">
+                  <img
+                    srcset="/polytex/img/awp-img.png"
+                    src="/polytex/img/awp-img.png"
+                    alt="Автокрани"
+                    width="280"
+                  />
+                </div> -->
+              </li>
+              <li class="procucts-list-item">
+                <div class="title-icon-wrapper">
+                  <svg class="icon" width="38" height="19">
+                    <use href="./img/icons.svg#icon-pre-title-icon"></use>
+                  </svg>
+                  <h3 class="procucts-list-item-title">Для рятувальників</h3>
+                </div>
+                <!-- <div class="procucts-list-item-title-row">
+                  <p class="pre-title-icon">
+                    <svg width="38" height="18">
+                      <use href="/polytex/img/icons.svg#pre-title-icon"></use>
+                    </svg>
+                  </p>
+                  <h3 class="procucts-list-item-title">Для рятувальників</h3>
+                </div> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./img/main-page/product/product4.jpg    1x,
+                      ./img/main-page/product/product4-2x.jpg 2x
+                    "
+                    media="(min-width: 946px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/product/product4.jpg    1x,
+                      ./img/main-page/product/product4-2x.jpg 2x
+                    "
+                    media="(max-width: 945px)"
+                  />
+                  <!--виправити з зобраненнями для моб.версії-->
+                  <img
+                    src="./img/main-page/product/product4.jpg"
+                    alt="Автокран"
+                    width="280"
+                  />
+                </picture>
+                <!-- <div class="procucts-list-img">
+                  <img
+                    srcset="/polytex/img/fire-img.png"
+                    src="/polytex/img/fire-img.png"
+                    alt="Автокрани"
+                    width="280"
+                  />
+                </div> -->
+              </li>
             </ul>
+            <div class="products-nav-row">
+              <span>
+                <svg class="nav-arrow-left prev" width="18" height="18">
+                  <use href="/polytex/img/icons.svg#nav-arrow-left"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class="nav-arrow-left next" width="18" height="18">
+                  <use href="/polytex/img/icons.svg#nav-arrow-right"></use>
+                </svg>
+              </span>
+            </div>
           </div>
-          <ul class="products-list">
-            <li class="products-list-item">
-              <h4 class="products-list-item-title">Продаж та аренда техніки</h4>
-              <p class="products-list-item-text">
-                Гарантуємо надійність техніки, повне технічне обслуговування та
-                професійний ремонт.
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="container about-us-container">
+          <div class="pre-title-row">
+            <p class="pre-title-icon">
+              <svg width="38" height="18">
+                <use href="/polytex/img/icons.svg#pre-title-icon"></use>
+              </svg>
+            </p>
+            <p class="section-pre-title">Про нас</p>
+          </div>
+          <div class="about-us-title-row">
+            <div class="about-us-title-container">
+              <h2 class="about-us-title">
+                Політек Імпекс – Ваш надійний партнер у світі автокранів та
+                підйомників в Україні
+              </h2>
+              <p class="about-us-description">
+                Наші спеціалісти мають насправді унікальний досвід продажу,
+                сервісу, ремонту і обслуговуванню різноманітних колісних кранів
+                і підйомників
               </p>
-              <div class="products-list-item-img">
+              <a href="" class="button">
+                <div class="button-row">
+                  <p class="button-text">Детальніше</p>
+                  <p class="button-arrow">
+                    <svg class="nav-arrow-left" width="14" height="16">
+                      <use href="/polytex/img/icons.svg#button-arrow"></use>
+                    </svg>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <p class="about-us-title-description">
+              Обирайте Політек Імпекс – і ваш бізнес отримає найкращу технічну
+              підтримку для досягнення нових висот!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="advertize">
+        <div class="container container-advertize">
+          <div class="advertize-row">
+            <div class="brand-icon">
+              <svg class="nav-arrow-left" width="31" height="22">
+                <use href="/polytex/img/icons.svg#brand-icon"></use>
+              </svg>
+            </div>
+            <p class="advertize-text">POLYTEX - піднімаємо на новий рівень</p>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="container projects-container">
+          <div class="pre-title-row">
+            <p class="pre-title-icon">
+              <svg width="38" height="18">
+                <use href="/polytex/img/icons.svg#pre-title-icon"></use>
+              </svg>
+            </p>
+            <p class="section-pre-title">Реалізовані проєкти</p>
+          </div>
+          <div class="products-title-row">
+            <h2 class="products-title">
+              Реалізовуємо проекти для передових компанії України
+            </h2>
+            <p class="products-title-description">
+              Ми успішно співпрацюємо з проектамив промисловому секторі,
+              аграрній сфері та для ДСНС.
+            </p>
+          </div>
+          <ul class="projects-list">
+            <a class="projects-card-link" href=""
+              ><li class="projects-list-item">
                 <img
-                  srcset="/polytex/img/service-1.png"
-                  src="/polytex/img/service-1.png"
+                  srcset="/polytex/img/project-1.png"
+                  src="/polytex/img/project-1.png"
                   alt="Автокрани"
                   width="280"
                 />
-              </div>
+                <p class="project-card-title">Агропромисловість</p>
+              </li>
+            </a>
+            <a class="projects-card-link" href=""
+              ><li class="projects-list-item">
+                <img
+                  srcset="/polytex/img/project-2.png"
+                  src="/polytex/img/project-1.png"
+                  alt="Автокрани"
+                  width="280"
+                />
+                <p class="project-card-title">Гірничо–видобування</p>
+              </li>
+            </a>
+            <a class="projects-card-link" href=""
+              ><li class="projects-list-item">
+                <img
+                  srcset="/polytex/img/project-3.png"
+                  src="/polytex/img/project-1.png"
+                  alt="Автокрани"
+                  width="280"
+                />
+                <p class="project-card-title">Будівництво</p>
+              </li>
+            </a>
+            <a class="projects-card-link" href=""
+              ><li class="projects-list-item">
+                <img
+                  srcset="/polytex/img/project-4.png"
+                  src="/polytex/img/project-1.png"
+                  alt="Автокрани"
+                  width="280"
+                />
+                <p class="project-card-title">Рятувальна служба</p>
+              </li>
+            </a>
+          </ul>
+          <ul class="key-numbers-list">
+            <li class="key-numbers-item">
+              <p class="key-number">200+</p>
+              <p class="key-number-text">завершених проектів</p>
+              <span class="key-numbers-sep"></span>
             </li>
-            <li class="products-list-item">
-              <h4 class="products-list-item-title">ремонт та обслуговування</h4>
-              <p class="products-list-item-text">
-                Гарантуємо надійність техніки, повне технічне обслуговування та
-                професійний ремонт.
-              </p>
-              <div class="products-list-item-img">
-                <img
-                  srcset="/polytex/img/service-2.png"
-                  src="/polytex/img/service-2.png"
-                  alt="Автокрани"
-                  width="280"
-                />
-              </div>
+            <li class="key-numbers-item">
+              <p class="key-number">15+</p>
+              <p class="key-number-text">років досвіду у супроводі</p>
+              <span class="key-numbers-sep"></span>
             </li>
-            <li class="products-list-item">
-              <h4 class="products-list-item-title">Продаж запчастин</h4>
-              <p class="products-list-item-text">
-                Гарантуємо надійність техніки, повне технічне обслуговування та
-                професійний ремонт.
-              </p>
-              <div class="products-list-item-img">
-                <img
-                  srcset="/polytex/img/service-3.png"
-                  src="/polytex/img/service-3.png"
-                  alt="Автокрани"
-                  width="280"
-                />
-              </div>
+            <li class="key-numbers-item">
+              <p class="key-number">40+</p>
+              <p class="key-number-text">постійних клієнтів</p>
+              <span class="key-numbers-sep"></span>
+            </li>
+            <li class="key-numbers-item">
+              <p class="key-number">20+</p>
+              <p class="key-number-text">світових брендів</p>
             </li>
           </ul>
         </div>
-      </div>
-    </section>
-    <footer class="site-footer">
-      <div class="container footer-container">
-        <div class="footer-row">
-          <div class="footer-logo">
-            <div class="logo-box">
-              <a class="header-logo-link" href="">
-                <svg class="header-logo" width="180" height="24">
-                  <use href="/polytex/img/icons.svg#header-logo"></use>
-                </svg>
-              </a>
-            </div>
+      </section>
+      <section class="services">
+        <div class="container services-container">
+          <div class="pre-title-row">
+            <p class="pre-title-icon">
+              <svg width="38" height="18">
+                <use href="/polytex/img/icons.svg#pre-title-icon"></use>
+              </svg>
+            </p>
+            <p class="section-pre-title">Наші послуги</p>
           </div>
-          <div class="footer-nav">
-            <div class="footer-col">
-              <ul class="footer-nav-list">
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Про нас</li>
-                </a>
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Продукція</li>
-                </a>
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Запчастини</li>
-                </a>
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Ремонт і сервіс</li>
-                </a>
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Контакти</li>
-                </a>
+          <h2 class="services-title">
+            Наші основні компетенції – це
+            <span class="services-title-span"
+              >забезпечення ефективності будівництва</span
+            >
+          </h2>
+          <div class="products-decoration-raw">
+            <div class="services-dec">
+              <ul class="products-decoration-list">
+                <li class="products-decoration-item"></li>
+                <li class="products-decoration-item"></li>
+                <li class="products-decoration-item"></li>
               </ul>
             </div>
-            <div class="footer-col">
-              <ul class="footer-nav-list">
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Автокрани</li>
-                </a>
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Автовишки</li>
-                </a>
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Підйомники</li>
-                </a>
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Рятувальникам</li>
-                </a>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <ul class="footer-nav-list">
-                <a class="footer-nav-link" href="">
-                  <li class="footer-nav-item">Політика конфіденційності</li>
-                </a>
-              </ul>
-            </div>
-            <address class="footer-adreess">
-              <a class="footer-phone" href="">+38 044 333 68 69</a>
-              <a class="footer-adress" href="">м. Київ, вул. Будіндустрії, 7</a>
-              <div class="footer-working-hours">
-                <p class="footer-working-hours-text">Пн-Пт: 8:00-17:00</p>
-                <p class="footer-working-hours-text">Сб-Нд: вихідний</p>
-              </div>
-            </address>
+            <ul class="products-list">
+              <li class="products-list-item">
+                <h4 class="products-list-item-title">
+                  Продаж та аренда техніки
+                </h4>
+                <p class="products-list-item-text">
+                  Гарантуємо надійність техніки, повне технічне обслуговування
+                  та професійний ремонт.
+                </p>
+                <div class="products-list-item-img">
+                  <img
+                    srcset="/polytex/img/service-1.png"
+                    src="/polytex/img/service-1.png"
+                    alt="Автокрани"
+                    width="280"
+                  />
+                </div>
+              </li>
+              <li class="products-list-item">
+                <h4 class="products-list-item-title">
+                  ремонт та обслуговування
+                </h4>
+                <p class="products-list-item-text">
+                  Гарантуємо надійність техніки, повне технічне обслуговування
+                  та професійний ремонт.
+                </p>
+                <div class="products-list-item-img">
+                  <img
+                    srcset="/polytex/img/service-2.png"
+                    src="/polytex/img/service-2.png"
+                    alt="Автокрани"
+                    width="280"
+                  />
+                </div>
+              </li>
+              <li class="products-list-item">
+                <h4 class="products-list-item-title">Продаж запчастин</h4>
+                <p class="products-list-item-text">
+                  Гарантуємо надійність техніки, повне технічне обслуговування
+                  та професійний ремонт.
+                </p>
+                <div class="products-list-item-img">
+                  <img
+                    srcset="/polytex/img/service-3.png"
+                    src="/polytex/img/service-3.png"
+                    alt="Автокрани"
+                    width="280"
+                  />
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="logo-socials-wrapper">
+          <div class="logo">
+            <a
+              class="logo-link"
+              href="./index.html"
+              aria-label="polytex logo, main page"
+            >
+              <svg class="logo-icon" width="180" height="24">
+                <use href="./img/icons.svg#icon-full-logo"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="footer-socials-list">
+            <li class="footer-socials-item">
+              <a
+                href="https://www.facebook.com/PolytecImpex"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook.com"
+              >
+                <svg class="footer-socials-icons" width="24" height="24">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                href="https://www.linkedin.com/company/polytec-impex/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin.com"
+              >
+                <svg class="footer-socials-icons" width="24" height="24">
+                  <use href="./img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list-items"><a href="">Про нас</a></li>
+            <li class="footer-nav-list-items">
+              <a href="./products.html">Продукція</a>
+            </li>
+            <li class="footer-nav-list-items"><a href="">Запчастини</a></li>
+            <li class="footer-nav-list-items">
+              <a href="">Ремонт і cервіс</a>
+            </li>
+            <li class="footer-nav-list-items">
+              <a href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list-items"><a href="">автокрани</a></li>
+            <li class="footer-nav-list-items"><a href="">Автовишки</a></li>
+            <li class="footer-nav-list-items"><a href="">Підйомники</a></li>
+            <li class="footer-nav-list-items"><a href="">Рятувальні</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list-items">
+              <a href="">політика <br />конфідеційності</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="footer-contacts">
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-list-items">+38 044 333 68 69</li>
+            <li class="footer-contacts-list-items">
+              м. Київ, вул. Будіндустрії, 7
+            </li>
+            <li class="footer-contacts-list-items footer-working-hours">
+              Пн-Пт: 8:00-17:00 <br />
+              Сб-Нд: вихідний
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
-    <script type="text/javascript" src="/polytex/js/my-js.js"></script>
+    <!-- <script type="text/javascript" src="/polytex/js/my-js.js"></script> -->
   </body>
 </html>

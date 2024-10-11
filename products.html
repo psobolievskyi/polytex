@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <a
+            class="logo-link"
+            href="./index.html"
+            aria-label="polytex logo, main page"
+          >
+            <svg class="logo-icon" width="180" height="24">
+              <use href="./img/icons.svg#icon-full-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="site-menu">
+          <ul class="site-menu-list">
+            <li class="site-menu-list-items"><a href="">Про нас</a></li>
+            <li class="site-menu-list-items current">
+              <a href="./products.html">Продукція</a>
+            </li>
+            <li class="site-menu-list-items"><a href="">Запчастини</a></li>
+            <li class="site-menu-list-items">
+              <a href="">Ремонт і cервіс</a>
+            </li>
+            <li class="site-menu-list-items">
+              <a href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-contacts">
+          <a class="header-contacts-phone" href="tel:+380443336869"
+            >+38 044 333 68 69</a
+          >
+        </address>
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+          <nav class="mobile-menu">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-list-items">Про нас</li>
+              <li class="mobile-menu-list-items">Продукція</li>
+              <li class="mobile-menu-list-items">Запчастини</li>
+              <li class="mobile-menu-list-items">Ремонт і cервіс</li>
+              <li class="mobile-menu-list-items">Контакти</li>
+            </ul>
+          </nav>
+          <address class="header-mobile-contacts">
+            <a class="header-mobile-contacts-phone" href="tel:+380443336869"
+              >+38 044 333 68 69</a
+            >
+          </address>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="hero-products">
+        <div class="container hero-products-container">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">продукція</a></li>
+            <li class="breadcrumb-item">
+              <a href="">
+                <svg class="breadcrumb-icon" width="7" height="12">
+                  <use href="./img/icons.svg#icon-btn-arrow"></use>
+                </svg>
+                автовишки</a
+              >
+            </li>
+            <li class="breadcrumb-item">
+              <a href="">
+                <svg class="breadcrumb-icon" width="7" height="12">
+                  <use href="./img/icons.svg#icon-btn-arrow"></use>
+                </svg>
+                bronto</a
+              >
+            </li>
+          </ul>
+          <h1 class="hero-title">
+            Bronto S-XR – автовишки з додатковим радіусом дії
+          </h1>
+          <p class="hero-description">
+            Наші автовишки серії S-XR роблять більше за менші витрати, досягають
+            більшої висоти та дальності, знижують експлуатаційні витрати й
+            підвищують продуктивність. <br />Вони легші, споживають менше
+            пального та забезпечують більше робочого простору на тонну повної
+            ваги (GVW)
+          </p>
+        </div>
+      </section>
+      <!-- Services -->
+      <section class="services">
+        <div class="container services-container">
+          <h1 class="visually-hidden">Послуги</h1>
+          <div class="services-img">
+            <picture>
+              <source
+                srcset="
+                  ./img/products/services-big.jpg    1x,
+                  ./img/products/services-big-2x.jpg 2x
+                "
+                media="(min-width: 946px)"
+              />
+              <source
+                srcset="
+                  ./img/products/services-big.jpg    1x,
+                  ./img/products/services-big-2x.jpg 2x
+                "
+                media="(max-width: 945px)"
+              />
+              <img
+                src="./img/products/services-big.jpg"
+                alt="будівельна вантажівка"
+                width="580"
+              />
+            </picture>
+            <ul class="services-img-list">
+              <li>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/products/services-1.jpg    1x,
+                      ./img/products/services-1-2x.jpg 2x
+                    "
+                    media="(min-width: 946px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/products/services-1.jpg    1x,
+                      ./img/products/services-1-2x.jpg 2x
+                    "
+                    media="(max-width: 945px)"
+                  />
+                  <img
+                    src="./img/products/services-1.jpg"
+                    alt="будівельна вантажівка"
+                    width="180"
+                  />
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/products/services-2.jpg    1x,
+                      ./img/products/services-2-2x.jpg 2x
+                    "
+                    media="(min-width: 946px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/products/services-2.jpg    1x,
+                      ./img/products/services-2-2x.jpg 2x
+                    "
+                    media="(max-width: 945px)"
+                  />
+                  <img
+                    src="./img/products/services-2.jpg"
+                    alt="будівельна вантажівка"
+                    width="180"
+                  />
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/products/services-3.jpg    1x,
+                      ./img/products/services-3-2x.jpg 2x
+                    "
+                    media="(min-width: 946px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/products/services-3.jpg    1x,
+                      ./img/products/services-3-2x.jpg 2x
+                    "
+                    media="(max-width: 945px)"
+                  />
+                  <img
+                    src="./img/products/services-3.jpg"
+                    alt="будівельна вантажівка"
+                    width="180"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="services-text1">
+              Лінійка Bronto XR є чудовим прикладом нашого клієнтоорієнтованого
+              розвитку продукту, оскільки вона створена операторами для
+              операторів. З робочою висотою до 70 метрів і робочим вильотом до
+              41 метра, платформи серії XR дозволяють отримати доступ навіть до
+              найскладніших місць без компромісів. Легка у використанні та точна
+              система управління Bronto+ забезпечує вашу безпеку на висоті,
+              дозволяючи зосередитися на виконанні завдання.
+            </p>
+            <p class="services-text2">
+              Повітряна платформа – це довгострокова інвестиція. Наші послуги з
+              підтримки життєвого циклу гарантують, що ваші платформи будуть у
+              найкращому стані протягом багатьох років і десятиліть.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Benefits -->
+      <section class="benefits">
+        <div class="container benefits-container">
+          <h1 class="visually-hidden">Ключові переваги</h1>
+          <div class="benefits-video">
+            <iframe
+              src="https://www.youtube.com/embed/9_pNPTEwrWg?si=KbjAqpNgbUJGD8QM"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="description-list">
+            <h2 class="description-title">
+              <svg class="icon" width="24" height="18">
+                <use href="./img/icons.svg#icon-pre-title-icon"></use>
+              </svg>
+              Ключові переваги:
+            </h2>
+            <ul>
+              <li class="description-list-item">
+                Більша робоча зона для максимальної продуктивності
+              </li>
+              <li class="description-list-item">
+                Оптимізовані габарити та вага для транспортування
+              </li>
+              <li class="description-list-item">Знижена вартість володіння</li>
+              <li class="description-list-item">
+                Sky-Jib з автоматичним і ручним управлінням
+              </li>
+              <li class="description-list-item">
+                Надійний виліт за будь-яких зовнішніх умов
+              </li>
+              <li class="description-list-item">
+                Змінна система опор та автоматичне вирівнювання
+              </li>
+              <li class="description-list-item">
+                Зручна у використанні система управління Bronto 5+
+              </li>
+              <li class="description-list-item">
+                Сучасні інструменти обслуговування та широка мережа сервісних
+                центрів для забезпечення максимальної безперебійної роботи
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Options -->
+      <section class="options">
+        <div class="container options-container">
+          <h1 class="visually-hidden">Опції</h1>
+          <div>
+            <table class="parameters-table">
+              <tbody>
+                <thead>
+                  <tr class="parameters-table-head">
+                    <th class="parameters-table-header hidden">моделі</th>
+                    <th class="parameters-table-header">S47XR</th>
+                    <th class="parameters-table-header">S56XR</th>
+                    <th class="parameters-table-header">S70XR</th>
+                  </tr>
+                </thead>
+                <tr class="parameters-table-row">
+                  <td class="parameters-table-data image">
+                    <img
+                      src="./img/products/parameters1.png"
+                      alt="візуалізація параметрів"
+                    />
+                  </td>
+                  <td class="parameters-table-data">47 m</td>
+                  <td class="parameters-table-data">56 m</td>
+                  <td class="parameters-table-data">70 m</td>
+                </tr>
+                <tr class="parameters-table-row">
+                  <td class="parameters-table-data image">
+                    <img
+                      src="./img/products/parameters2.png"
+                      alt="візуалізація параметрів"
+                    />
+                  </td>
+                  <td class="parameters-table-data">26 m</td>
+                  <td class="parameters-table-data">41 m</td>
+                  <td class="parameters-table-data">38 m</td>
+                </tr>
+                <tr class="parameters-table-row">
+                  <td class="parameters-table-data image">
+                    <img
+                      src="./img/products/parameters3.png"
+                      alt="візуалізація параметрів"
+                    />
+                  </td>
+                  <td class="parameters-table-data">700 kg</td>
+                  <td class="parameters-table-data">700kg</td>
+                  <td class="parameters-table-data">700 kg</td>
+                </tr>
+                <tr class="parameters-table-row">
+                  <td class="parameters-table-data image">
+                    <img
+                      src="./img/products/parameters4.png"
+                      alt="візуалізація параметрів"
+                    />
+                  </td>
+                  <td class="parameters-table-data">2x90°</td>
+                  <td class="parameters-table-data">2x90° <br />(2x220°)</td>
+                  <td class="parameters-table-data">2x90° <br />(2x220°)</td>
+                </tr>
+                <tr class="parameters-table-row">
+                  <td class="parameters-table-data image">
+                    <img
+                      src="./img/products/parameters5.png"
+                      alt="візуалізація параметрів"
+                    />
+                  </td>
+                  <td class="parameters-table-data">3.8 m*</td>
+                  <td class="parameters-table-data">3.8 m*</td>
+                  <td class="parameters-table-data">3.95 m*</td>
+                </tr>
+                <tr class="parameters-table-row">
+                  <td class="parameters-table-data image">
+                    <img
+                      src="./img/products/parameters6.png"
+                      alt="візуалізація параметрів"
+                    />
+                  </td>
+                  <td class="parameters-table-data">10 m*</td>
+                  <td class="parameters-table-data">11.9 m*</td>
+                  <td class="parameters-table-data">12 m*</td>
+                </tr>
+                <tr class="parameters-table-row">
+                  <td class="parameters-table-data image">
+                    <img
+                      src="./img/products/parameters7.png"
+                      alt="візуалізація параметрів"
+                    />
+                  </td>
+                  <td class="parameters-table-data">18 t*</td>
+                  <td class="parameters-table-data">26 t*</td>
+                  <td class="parameters-table-data">32 t*</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="parameters-text">
+              *залежить від шасі <br />Технічні дані та ілюстрації можуть
+              змінюватися без попередження.
+            </p>
+          </div>
+          <div class="options-technical-wrapper">
+            <div class="description-list">
+              <h2 class="description-title">
+                <svg class="icon" width="24" height="18">
+                  <use href="./img/icons.svg#icon-pre-title-icon"></use>
+                </svg>
+                Різні опції, зокрема:
+              </h2>
+              <ul>
+                <li class="description-list-item">
+                  Обертання кошика на 2 x 220° (не для моделі S47XR)
+                </li>
+                <li class="description-list-item">
+                  Лебідка на кошику, максимальне навантаження 400 кг
+                </li>
+                <li class="description-list-item">
+                  Лебідка на стрілі, максимальне навантаження 1 100 кг
+                </li>
+                <li class="description-list-item">
+                  Висувний кошик, ширина до 3,7 м
+                </li>
+                <li class="description-list-item">
+                  Бездротове дистанційне керування рухами стріли
+                </li>
+                <li class="description-list-item">
+                  Додаткова аварійна резервна система
+                </li>
+                <li class="description-list-item">
+                  Bronto Loadman для вимірювання несучої здатності ґрунту
+                </li>
+                <li class="description-list-item">
+                  Ультразвуковий захист від зіткнень
+                </li>
+              </ul>
+            </div>
+            <div class="description-list">
+              <h2 class="description-title">
+                <svg class="icon" width="24" height="18">
+                  <use href="./img/icons.svg#icon-pre-title-icon"></use>
+                </svg>
+                Технічні брошури
+              </h2>
+              <ul>
+                <li class="description-list-item technicals technicals">
+                  <a href="" download="Bronto_Skylift_S-XR_brochure.pdf">
+                    Bronto Skylift S-XR brochure
+                    <svg class="icon-download" width="24" height="24">
+                      <use href="./img/icons.svg#icon-download-tray"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="description-list-item technicals">
+                  <a href="" download="2x220_Cage_Rotation.pdf">
+                    Option: 2x220 Cage Rotation
+                    <svg class="icon-download" width="24" height="24">
+                      <use href="./img/icons.svg#icon-download-tray"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="description-list-item technicals">
+                  <a href="" download="Cage_Winch.pdf">
+                    Option: Cage Winch
+                    <svg class="icon-download" width="24" height="24">
+                      <use href="./img/icons.svg#icon-download-tray"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="description-list-item technicals">
+                  <a href="" download="Extendable_Working_Cage.pdf">
+                    Option: Extendable Working Cage
+                    <svg class="icon-download" width="24" height="24">
+                      <use href="./img/icons.svg#icon-download-tray"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="description-list-item technicals">
+                  <a href="" download="Wireless_Remote_Control.pdf">
+                    Option: Wireless Remote Control
+                    <svg class="icon-download" width="24" height="24">
+                      <use href="./img/icons.svg#icon-download-tray"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="description-list-item technicals">
+                  <a href="" download="Emergency_Back_Up_System.pdf">
+                    Option: Emergency Back Up System
+                    <svg class="icon-download" width="24" height="24">
+                      <use href="./img/icons.svg#icon-download-tray"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="description-list-item technicals">
+                  <a href="" download="Loadman.pdff">
+                    Option: Loadman
+                    <svg class="icon-download" width="24" height="24">
+                      <use href="./img/icons.svg#icon-download-tray"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="logo-socials-wrapper">
+          <div class="logo">
+            <a
+              class="logo-link"
+              href="./index.html"
+              aria-label="polytex logo, main page"
+            >
+              <svg class="logo-icon" width="180" height="24">
+                <use href="./img/icons.svg#icon-full-logo"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="footer-socials-list">
+            <li class="footer-socials-item">
+              <a
+                href="https://www.facebook.com/PolytecImpex"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook.com"
+              >
+                <svg class="footer-socials-icons" width="24" height="24">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                href="https://www.linkedin.com/company/polytec-impex/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin.com"
+              >
+                <svg class="footer-socials-icons" width="24" height="24">
+                  <use href="./img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list-items"><a href="">Про нас</a></li>
+            <li class="footer-nav-list-items">
+              <a href="./products.html">Продукція</a>
+            </li>
+            <li class="footer-nav-list-items"><a href="">Запчастини</a></li>
+            <li class="footer-nav-list-items">
+              <a href="">Ремонт і cервіс</a>
+            </li>
+            <li class="footer-nav-list-items">
+              <a href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list-items"><a href="">автокрани</a></li>
+            <li class="footer-nav-list-items"><a href="">Автовишки</a></li>
+            <li class="footer-nav-list-items"><a href="">Підйомники</a></li>
+            <li class="footer-nav-list-items"><a href="">Рятувальні</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list-items">
+              <a href="">політика <br />конфідеційності</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="footer-contacts">
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-list-items">+38 044 333 68 69</li>
+            <li class="footer-contacts-list-items">
+              м. Київ, вул. Будіндустрії, 7
+            </li>
+            <li class="footer-contacts-list-items footer-working-hours">
+              Пн-Пт: 8:00-17:00 <br />
+              Сб-Нд: вихідний
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>

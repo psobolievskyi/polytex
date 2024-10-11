@@ -1,0 +1,188 @@
+/* contact info */
+.contact-info {
+  background: #eff1f4;
+}
+.contact-info-container {
+  display: flex;
+}
+.our-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  margin-right: 24px;
+  flex: 1 1 480px;
+}
+
+.title-icon-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.contacts-title {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #83837a;
+}
+
+.our-contacts-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.our-contacts-info-list-items {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.address-icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.email-style {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+}
+
+.contact-us-title {
+  padding-left: 100px;
+}
+
+.input,
+.textarea {
+  border: none;
+  border-bottom: 1px solid #444;
+  width: 100%;
+  height: 35px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #b6b6b6;
+  outline: none;
+  background-color: transparent;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.textarea {
+  resize: none;
+  margin-bottom: 48px;
+}
+
+.submit-btn {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  background-color: #444;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 24px;
+  width: 200px;
+  height: 56px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #353232;
+}
+
+/* department contacts */
+.department-contacts {
+  background-color: #e4e7ec;
+}
+
+.department-contacts-table {
+  margin-bottom: 48px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 24px;
+}
+
+.department-contacts-table-row {
+  padding-bottom: 24px;
+}
+
+.department-contacts-table-data {
+  flex-basis: calc((100% - (3 * 20px)) / 4);
+}
+
+.department-contacts-table-data-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #444;
+  flex-grow: 1;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  margin: 0 auto;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* regional branches  */
+.regional-branches {
+  background-color: #fff;
+}
+
+.regional-branches-info {
+  display: flex;
+  gap: 20px;
+}
+
+.regional-branches-info-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 24px;
+  background-color: #eff1f4;
+  width: 100%;
+}
+
+.city-name {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #83837a;
+}
+
+.regional-branches-map-container {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  margin: 0 auto;
+}
