@@ -16,6 +16,10 @@
 .title-icon-wrapper {
   display: flex;
   gap: 10px;
+  margin-bottom: 24px;
+}
+
+.title-icon-wrapper.contacts {
   margin-bottom: 48px;
 }
 
