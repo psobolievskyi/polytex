@@ -242,7 +242,7 @@
   margin: 0;
 }
 
-/* products section */
+/* equipment */
 .products-title-row {
   display: flex;
   flex-direction: row;
@@ -284,7 +284,6 @@
 }
 .products-list-item-title {
   display: block;
-  margin: 0px 0px 0px 10px;
   color: #1d1d1b;
   font-family: "Fixel Display";
   font-size: 18px;
@@ -293,6 +292,7 @@
   line-height: 130%; /* 23.4px */
   text-transform: uppercase;
 }
+
 .products-list-item-title-row {
   display: flex;
   flex-direction: row;
@@ -320,6 +320,20 @@
   margin-top: 24px;
   justify-content: center;
 }
+
+@media screen and (max-width: 1292px) and (min-width: 947px) {
+  .title-icon-wrapper.position {
+    position: relative;
+  }
+
+  .products-list-item-title.position {
+    position: absolute;
+    left: 48px;
+    top: -15px;
+    max-width: 150px;
+  }
+}
+
 .hero-slider-nav-row svg {
   fill: white;
 }

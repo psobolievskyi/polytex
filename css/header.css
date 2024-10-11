@@ -53,7 +53,7 @@
 }
 
 /* Mobile vertion */
-@media only screen and (max-width: 945px) {
+@media only screen and (max-width: 946px) {
   .site-menu,
   .header-contacts {
     display: none;
