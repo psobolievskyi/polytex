@@ -195,6 +195,7 @@
   max-width: 580px;
   min-height: 56px;
   margin-bottom: 16px;
+  transition: color 0.3s;
 }
 
 .description-list-item.technicals a {

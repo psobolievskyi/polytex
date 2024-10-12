@@ -53,7 +53,18 @@
 }
 
 /* Mobile vertion */
-@media only screen and (max-width: 946px) {
+@media only screen and (max-width: 9456px) {
+  .header-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 48px;
+  }
+  
+  .logo-icon {
+    width: 118px;
+    height: 16px;
+  }
+  
   .site-menu,
   .header-contacts {
     display: none;
