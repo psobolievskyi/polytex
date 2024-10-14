@@ -28,16 +28,20 @@
         </div>
         <nav class="site-menu">
           <ul class="site-menu-list">
-            <li class="site-menu-list-items"><a href="">Про нас</a></li>
-            <li class="site-menu-list-items current">
-              <a href="./products.html">Продукція</a>
-            </li>
-            <li class="site-menu-list-items"><a href="">Запчастини</a></li>
             <li class="site-menu-list-items">
-              <a href="">Ремонт і cервіс</a>
+              <a data-menu-about-close href="">Про нас</a>
             </li>
             <li class="site-menu-list-items">
-              <a href="./contacts.html">Контакти</a>
+              <a data-menu-products-close href="./products.html">Продукція</a>
+            </li>
+            <li class="site-menu-list-items">
+              <a data-menu-spares-close href="">Запчастини</a>
+            </li>
+            <li class="site-menu-list-items">
+              <a data-menu-repair-close href="">Ремонт і cервіс</a>
+            </li>
+            <li class="site-menu-list-items">
+              <a data-menu-contacts-close href="./contacts.html">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -46,21 +50,43 @@
             >+38 044 333 68 69</a
           >
         </address>
-        <!-- Mobile menu -->
-        <div class="mobile-menu"> 
+        <button
+          class="open-bth-header"
+          type="button"
+          data-menu-open
+          aria-label="відкрити меню"
+        >
+          <svg class="icon-btn-header" width="24" height="24">
+            <use href="./img/icons.svg#icon-open-menu-btn"></use>
+          </svg>
+        </button>
+        <button
+          class="close-bth-header"
+          type="button"
+          data-menu-close
+          aria-label="закрити меню"
+        >
+          <svg class="icon-btn-header" width="24" height="24">
+            <use href="./img/icons.svg#icon-close-menu-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
           <nav class="mobile-menu-nav">
             <ul class="mobile-menu-list">
               <li class="mobile-menu-list-items"><a href="">Про нас</a></li>
-            <li class="mobile-menu-list-items">
-              <a href="./products.html">Продукція</a>
-            </li>
-            <li class="mobile-menu-list-items"><a href="">Запчастини</a></li>
-            <li class="mobile-menu-list-items">
-              <a href="">Ремонт і cервіс</a>
-            </li>
-            <li class="mobile-menu-list-items">
-              <a href="./contacts.html">Контакти</a>
-            </li>
+              <li class="mobile-menu-list-items">
+                <a href="./products.html">Продукція</a>
+              </li>
+              <li class="mobile-menu-list-items"><a href="">Запчастини</a></li>
+              <li class="mobile-menu-list-items">
+                <a href="">Ремонт і cервіс</a>
+              </li>
+              <li class="mobile-menu-list-items">
+                <a href="./contacts.html">Контакти</a>
+              </li>
             </ul>
           </nav>
           <address class="header-mobile-contacts">
@@ -561,5 +587,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="./js/menu.js"></script>
   </body>
 </html>
