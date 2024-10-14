@@ -1,17 +1,18 @@
 /* header */
 .header-container {
-  padding-top: 29px;
-  padding-bottom: 29px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   display: flex;
   justify-content: space-between;
-  height: 80px;
   border-bottom: 1px solid #5bb139;
+  height: 80px;
 }
 
 .site-menu-list {
   display: flex;
   gap: 24px;
-}
+} 
+
 .site-menu-list-items {
   font-weight: 400;
   font-size: 16px;
@@ -28,6 +29,7 @@
   background: #5bb139;
   transition: width 0.3s;
 }
+
 .site-menu-list-items:hover::after {
   width: 100%;
 }
@@ -48,56 +50,48 @@
   color: #5bb139;
 }
 
-.mobile-menu,
-.open-bth-header {
+.open-bth-header,
+.close-bth-header,
+.mobile-menu {
   display: none;
+}
+
+@media only screen and (min-width: 947px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+  }
+
+  body {
+    padding-top: 80px; /* altezza dell'header */
+  }
 }
 
 /* Mobile vertion */
 @media only screen and (max-width: 946px) {
+  .site-menu,
+  .header-contacts {
+    display: none;
+  }
+  
   .header-container {
+    position: relative;
     padding-top: 16px;
     padding-bottom: 16px;
-    flex-direction: column;
-    height: 350px;
-    border-bottom: none;
-    position: relative;
-  }
-
-  .header-container::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 48px;
-    height: 1px; 
-    background-color: #5bb139;
-  }
-
-  .open-bth-header {
-    display: block;
-  }
-
-  .mobile-menu.is-open,
-  .close-bth-header.is-open {
-    display: flex;
-  }
-
-  .logo {
-    padding-bottom: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 48px;
   }
 
   .logo-icon {
     width: 118px;
     height: 16px;
   }
-
-  .site-menu,
-  .header-contacts {
-    display: none;
+  
+  .open-bth-header {
+    display: block;
   }
 
   .open-bth-header,
@@ -111,14 +105,31 @@
     stroke-width: 1.5px;
     stroke: #5bb139;
     cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 16px;
   }
 
-  .mobile-menu {
+  .mobile-menu.is-open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu.is-open .close-bth-header {
+    display: block;
+  }
+
+  .mobile-menu.is-open .open-bth-header {
+    display: none;
+  }
+
+  .mobile-menu-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    height: 302px;
+    padding: 16px;
+    height: 100%;
   }
 
   .mobile-menu-list {
@@ -139,4 +150,6 @@
     font-size: 18px;
     color: #444;
   }
+
 }
+
