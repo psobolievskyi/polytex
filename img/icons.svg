@@ -1,5 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+    <symbol id="icon-arrow-left" viewBox="0 0 37 32">
+      <path d="M35.232 18.482H8.75l10.286 10.286L15.804 32 .001 16.197 15.804.394l3.232 3.232L8.75 13.912h26.482v4.571z"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 37 32">
+      <path d="M1.339 13.518h26.482L17.535 3.232 20.767 0 36.57 15.803 20.767 31.606l-3.232-3.232 10.286-10.286H1.339v-4.571z"/>
+    </symbol>
+    <symbol id="icon-big-btn-arrow" viewBox="0 0 12 32">
+      <path fill="#fff" d="M2.702.706 11.878 16 2.702 31.294.207 29.797 8.485 16 .207 2.203 2.702.706z" style="fill:var(--color1, #fff)"/>
+    </symbol>
     <symbol id="icon-download-tray" viewBox="0 0 32 32">
       <path stroke-width="2" d="M3.223 22.389v6.389h25.556v-6.389M8.334 13.444l7.667 7.667 7.667-7.667M16.001 21.111V1.944"/>
     </symbol>

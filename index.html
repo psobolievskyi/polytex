@@ -42,15 +42,19 @@
             <svg class="logo-icon" width="180" height="24">
               <use href="./img/icons.svg#icon-full-logo"></use>
             </svg>
-          </a>          
+          </a>
         </div>
         <nav class="site-menu">
           <ul class="site-menu-list">
-            <li class="site-menu-list-items"><a data-menu-about-close href="">Про нас</a></li>
+            <li class="site-menu-list-items">
+              <a data-menu-about-close href="">Про нас</a>
+            </li>
             <li class="site-menu-list-items">
               <a data-menu-products-close href="./products.html">Продукція</a>
             </li>
-            <li class="site-menu-list-items"><a data-menu-spares-close href="">Запчастини</a></li>
+            <li class="site-menu-list-items">
+              <a data-menu-spares-close href="">Запчастини</a>
+            </li>
             <li class="site-menu-list-items">
               <a data-menu-repair-close href="">Ремонт і cервіс</a>
             </li>
@@ -64,34 +68,43 @@
             >+38 044 333 68 69</a
           >
         </address>
-        <button class="open-bth-header" type="button" data-menu-open aria-label="відкрити меню">
+        <button
+          class="open-bth-header"
+          type="button"
+          data-menu-open
+          aria-label="відкрити меню"
+        >
           <svg class="icon-btn-header" width="24" height="24">
             <use href="./img/icons.svg#icon-open-menu-btn"></use>
           </svg>
-         </button>
-         <button class="close-bth-header" type="button" data-menu-close aria-label="закрити меню">
+        </button>
+        <button
+          class="close-bth-header"
+          type="button"
+          data-menu-close
+          aria-label="закрити меню"
+        >
           <svg class="icon-btn-header" width="24" height="24">
             <use href="./img/icons.svg#icon-close-menu-btn"></use>
           </svg>
-         </button>        
+        </button>
       </div>
-      <!-- Mobile menu -->                       
-      <div class="mobile-menu" data-menu> 
-        <div class=" container mobile-menu-container">
-          
+      <!-- Mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
           <nav class="mobile-menu-nav">
             <ul class="mobile-menu-list">
               <li class="mobile-menu-list-items"><a href="">Про нас</a></li>
-            <li class="mobile-menu-list-items">
-              <a href="./products.html">Продукція</a>
-            </li>
-            <li class="mobile-menu-list-items"><a href="">Запчастини</a></li>
-            <li class="mobile-menu-list-items">
-              <a href="">Ремонт і cервіс</a>
-            </li>
-            <li class="mobile-menu-list-items">
-              <a href="./contacts.html">Контакти</a>
-            </li>
+              <li class="mobile-menu-list-items">
+                <a href="./products.html">Продукція</a>
+              </li>
+              <li class="mobile-menu-list-items"><a href="">Запчастини</a></li>
+              <li class="mobile-menu-list-items">
+                <a href="">Ремонт і cервіс</a>
+              </li>
+              <li class="mobile-menu-list-items">
+                <a href="./contacts.html">Контакти</a>
+              </li>
             </ul>
           </nav>
           <address class="header-mobile-contacts">
@@ -122,21 +135,24 @@
               <use href="./img//icons.svg#icon-btn-arrow"></use>
             </svg>
           </button>
-
-          <!-- need review
-           
-          <div class="hero-slider-nav-row">
-            <span>
-              ><svg class="nav-arrow-left hero-prev" width="18" height="18">
-                <use href="/polytex/img/icons.svg#nav-arrow-left"></use>
+          <div class="slider-container">
+            <a href="">
+              <svg class="slider-arrow left" width="16" height="14">
+                <use href="./img/icons.svg#icon-arrow-left"></use>
               </svg>
-            </span>
-            <span>
-              ><svg class="nav-arrow-left hero-next" width="18" height="18">
-                <use href="/polytex/img/icons.svg#nav-arrow-right"></use>
+            </a>
+            <div class="slider-box-wrapper">
+              <div class="slider-box first"></div>
+              <div class="slider-box"></div>
+              <div class="slider-box"></div>
+              <div class="slider-box"></div>
+            </div>
+            <a href="">
+              <svg class="slider-arrow right" width="16" height="14">
+                <use href="./img/icons.svg#icon-arrow-right"></use>
               </svg>
-            </span>
-          </div> -->
+            </a>
+          </div>
         </div>
 
         <!-- Products -->
@@ -163,13 +179,13 @@
           </div>
           <div class="products-list-raw">
             <!-- need review-->
-              <ul class="products-decoration-list">
-                <li class="products-decoration-item"></li>
-                <li class="products-decoration-item none"></li>
-                <li class="products-decoration-item none"></li>
-                <li class="products-decoration-item none"></li>
-              </ul>
-            
+            <ul class="products-decoration-list">
+              <li class="products-decoration-item"></li>
+              <li class="products-decoration-item none"></li>
+              <li class="products-decoration-item none"></li>
+              <li class="products-decoration-item none"></li>
+            </ul>
+
             <ul class="products-list">
               <li class="products-list-item">
                 <div class="title-icon-wrapper">
@@ -290,20 +306,23 @@
                 </picture>
               </li>
             </ul>
-
-            <!-- need review -->
-            <div class="products-nav-row">
-              <span>
-                <svg class="nav-arrow-left prev" width="18" height="18">
-                  <use href="/polytex/img/icons.svg#nav-arrow-left"></use>
-                </svg>
-              </span>
-              <span>
-                <svg class="nav-arrow-left next" width="18" height="18">
-                  <use href="/polytex/img/icons.svg#nav-arrow-right"></use>
-                </svg>
-              </span>
+            <div class="slider-container products">
+            <a href="">
+              <svg class="slider-arrow products left" width="16" height="14">
+                <use href="./img/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </a>
+            <div class="slider-box-wrapper">
+              <div class="slider-box first"></div>
+              <div class="slider-box products"></div>
+              <div class="slider-box products"></div>
+              <div class="slider-box products"></div>
             </div>
+            <a href="">
+              <svg class="slider-arrow products right" width="16" height="14">
+                <use href="./img/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -323,7 +342,7 @@
               <p class="about-us-slogan">
                 Політек Імпекс – Ваш надійний партнер у світі автокранів та
                 підйомників в Україні
-              </p>              
+              </p>
             </div>
             <div>
               <p class="about-us-second-description">
@@ -337,12 +356,11 @@
                 Презентація</a
               >
             </div>
-          </div> 
+          </div>
           <p class="about-us-description">
-            Наші спеціалісти мають насправді унікальний досвід продажу,
-            сервісу, ремонту і обслуговуванню різноманітних колісних кранів
-            і підйомників
-          </p>         
+            Наші спеціалісти мають насправді унікальний досвід продажу, сервісу,
+            ремонту і обслуговуванню різноманітних колісних кранів і підйомників
+          </p>
           <button type="button" class="info-btn">
             Детальніше
             <svg class="btn-icon" width="8" height="16">
@@ -522,13 +540,12 @@
 
           <!-- need reviw -->
           <div class="services-dec">
-            
-              <ul class="products-decoration-list">
-                <li class="products-decoration-item"></li>
-                <li class="products-decoration-item none"></li>
-                <li class="products-decoration-item none"></li>
-              </ul>
-            
+            <ul class="products-decoration-list">
+              <li class="products-decoration-item"></li>
+              <li class="products-decoration-item none"></li>
+              <li class="products-decoration-item none"></li>
+            </ul>
+
             <!--  -->
 
             <ul class="products-list-main">
@@ -758,6 +775,6 @@
       </div>
     </footer>
     <!-- <script type="text/javascript" src="/polytex/js/my-js.js"></script> -->
-     <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/menu.js"></script>
   </body>
 </html>
