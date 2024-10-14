@@ -27,6 +27,12 @@
   fill: #5bb139;
 }
 
+.nav-add-wrapper {
+  display: flex;
+  max-width: 880px;
+  gap: 20px;
+}
+
 .footer-nav {
   display: flex;
   justify-content: space-between;
@@ -51,7 +57,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-right: 46px;
 }
 
 .footer-contacts-list-items {
@@ -64,4 +69,29 @@
 .footer-working-hours {
   font-weight: 400;
   color: #83837a;
+}
+
+@media only screen and (max-width: 946px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .footer-socials-list {
+    display: none;
+  }
+
+  .logo-icon.footer {
+    width: 180px;
+    height: 24px;
+  }
+
+  .nav-add-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+  }
 }

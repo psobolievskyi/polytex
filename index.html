@@ -42,20 +42,20 @@
             <svg class="logo-icon" width="180" height="24">
               <use href="./img/icons.svg#icon-full-logo"></use>
             </svg>
-          </a>
+          </a>          
         </div>
         <nav class="site-menu">
           <ul class="site-menu-list">
-            <li class="site-menu-list-items"><a href="">Про нас</a></li>
+            <li class="site-menu-list-items"><a data-menu-about-close href="">Про нас</a></li>
             <li class="site-menu-list-items">
-              <a href="./products.html">Продукція</a>
+              <a data-menu-products-close href="./products.html">Продукція</a>
             </li>
-            <li class="site-menu-list-items"><a href="">Запчастини</a></li>
+            <li class="site-menu-list-items"><a data-menu-spares-close href="">Запчастини</a></li>
             <li class="site-menu-list-items">
-              <a href="">Ремонт і cервіс</a>
+              <a data-menu-repair-close href="">Ремонт і cервіс</a>
             </li>
             <li class="site-menu-list-items">
-              <a href="./contacts.html">Контакти</a>
+              <a data-menu-contacts-close href="./contacts.html">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -64,15 +64,31 @@
             >+38 044 333 68 69</a
           >
         </address>
-        <!-- Mobile menu -->
-        <div class="mobile-menu">
-          <nav class="mobile-menu">
+        <button class="open-bth-header" type="button" data-menu-open aria-label="відкрити меню">
+          <svg class="icon-btn-header" width="24" height="24">
+            <use href="./img/icons.svg#icon-open-menu-btn"></use>
+          </svg>
+         </button>
+        <!-- Mobile menu -->                       
+        <div class="mobile-menu is-open" data-menu> 
+          <button class="close-bth-header" type="button" data-menu-close aria-label="закрити меню">
+            <svg class="icon-btn-header" width="24" height="24">
+              <use href="./img/icons.svg#icon-close-menu-btn"></use>
+            </svg>
+           </button> 
+          <nav class="mobile-menu-nav">
             <ul class="mobile-menu-list">
-              <li class="mobile-menu-list-items">Про нас</li>
-              <li class="mobile-menu-list-items">Продукція</li>
-              <li class="mobile-menu-list-items">Запчастини</li>
-              <li class="mobile-menu-list-items">Ремонт і cервіс</li>
-              <li class="mobile-menu-list-items">Контакти</li>
+              <li class="mobile-menu-list-items"><a href="">Про нас</a></li>
+            <li class="mobile-menu-list-items">
+              <a href="./products.html">Продукція</a>
+            </li>
+            <li class="mobile-menu-list-items"><a href="">Запчастини</a></li>
+            <li class="mobile-menu-list-items">
+              <a href="">Ремонт і cервіс</a>
+            </li>
+            <li class="mobile-menu-list-items">
+              <a href="./contacts.html">Контакти</a>
+            </li>
             </ul>
           </nav>
           <address class="header-mobile-contacts">
@@ -91,7 +107,7 @@
         <div class="container hero-main-container">
           <h1 class="hero-main-title">
             Продаж
-            <br />та обслуговування підйомної техніки
+            <br class="hero-br" />та обслуговування підйомної техніки
             <span class="wrapper">
               <p class="hero-span">B2B</p>
               <p class="hero-span">B2G</p>
@@ -502,14 +518,14 @@
           </h2>
 
           <!-- need reviw -->
-          <div class="products-decoration-raw">
-            <div class="services-dec">
+          <div class="services-dec">
+            
               <ul class="products-decoration-list">
                 <li class="products-decoration-item"></li>
-                <li class="products-decoration-item"></li>
-                <li class="products-decoration-item"></li>
+                <li class="products-decoration-item none"></li>
+                <li class="products-decoration-item none"></li>
               </ul>
-            </div>
+            
             <!--  -->
 
             <ul class="products-list-main">
@@ -664,7 +680,7 @@
               href="./index.html"
               aria-label="polytex logo, main page"
             >
-              <svg class="logo-icon" width="180" height="24">
+              <svg class="logo-icon footer" width="180" height="24">
                 <use href="./img/icons.svg#icon-full-logo"></use>
               </svg>
             </a>
@@ -696,46 +712,49 @@
             </li>
           </ul>
         </div>
-        <nav class="footer-nav">
-          <ul class="footer-nav-list">
-            <li class="footer-nav-list-items"><a href="">Про нас</a></li>
-            <li class="footer-nav-list-items">
-              <a href="./products.html">Продукція</a>
-            </li>
-            <li class="footer-nav-list-items"><a href="">Запчастини</a></li>
-            <li class="footer-nav-list-items">
-              <a href="">Ремонт і cервіс</a>
-            </li>
-            <li class="footer-nav-list-items">
-              <a href="./contacts.html">Контакти</a>
-            </li>
-          </ul>
-          <ul class="footer-nav-list">
-            <li class="footer-nav-list-items"><a href="">автокрани</a></li>
-            <li class="footer-nav-list-items"><a href="">Автовишки</a></li>
-            <li class="footer-nav-list-items"><a href="">Підйомники</a></li>
-            <li class="footer-nav-list-items"><a href="">Рятувальні</a></li>
-          </ul>
-          <ul class="footer-nav-list">
-            <li class="footer-nav-list-items">
-              <a href="">політика <br />конфідеційності</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="footer-contacts">
-          <ul class="footer-contacts-list">
-            <li class="footer-contacts-list-items">+38 044 333 68 69</li>
-            <li class="footer-contacts-list-items">
-              м. Київ, вул. Будіндустрії, 7
-            </li>
-            <li class="footer-contacts-list-items footer-working-hours">
-              Пн-Пт: 8:00-17:00 <br />
-              Сб-Нд: вихідний
-            </li>
-          </ul>
-        </address>
+        <div class="nav-add-wrapper">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-list-items"><a href="">Про нас</a></li>
+              <li class="footer-nav-list-items">
+                <a href="./products.html">Продукція</a>
+              </li>
+              <li class="footer-nav-list-items"><a href="">Запчастини</a></li>
+              <li class="footer-nav-list-items">
+                <a href="">Ремонт і cервіс</a>
+              </li>
+              <li class="footer-nav-list-items">
+                <a href="./contacts.html">Контакти</a>
+              </li>
+            </ul>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-list-items"><a href="">автокрани</a></li>
+              <li class="footer-nav-list-items"><a href="">Автовишки</a></li>
+              <li class="footer-nav-list-items"><a href="">Підйомники</a></li>
+              <li class="footer-nav-list-items"><a href="">Рятувальні</a></li>
+            </ul>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-list-items">
+                <a href="">політика <br />конфідеційності</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="footer-contacts">
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-list-items">+38 044 333 68 69</li>
+              <li class="footer-contacts-list-items">
+                м. Київ, вул. Будіндустрії, 7
+              </li>
+              <li class="footer-contacts-list-items footer-working-hours">
+                Пн-Пт: 8:00-17:00 <br />
+                Сб-Нд: вихідний
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
     <!-- <script type="text/javascript" src="/polytex/js/my-js.js"></script> -->
+     <script type="module" src="./js/menu.js"></script>
   </body>
 </html>
